@@ -1,0 +1,12 @@
+<Project>
+    <PropertyGroup>
+        <MauiVersion>10.0.80</MauiVersion>
+        <MicrosoftExtensionLoggingDebugVersion>10.0.10</MicrosoftExtensionLoggingDebugVersion>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <DirectoryPropsOverrideFile>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))</DirectoryPropsOverrideFile>
+    </PropertyGroup>
+
+    <Import Project="$(DirectoryPropsOverrideFile)" Condition="Exists('$(DirectoryPropsOverrideFile)')"/>
+</Project>
