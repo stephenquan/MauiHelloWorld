@@ -1,4 +1,6 @@
-﻿namespace MauiHelloWorld
+﻿using Microsoft.Extensions.DependencyInjection;
+
+namespace MauiHelloWorld
 {
     public partial class App : Application
     {
